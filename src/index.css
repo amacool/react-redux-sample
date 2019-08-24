@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none; }
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; }
+
+.App-link {
+  color: #61dafb; }
+
+.user-hobby-container h2 {
+  color: red; }
+
+.user-hobby-container input {
+  text-align: center; }
+
+.user-hobby-container input::placeholder {
+  text-align: center;
+  color: #ddd; }
+
+.user-hobby-container .user-hobby-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  border: solid 1px black;
+  font-size: 20px; }
+  .user-hobby-container .user-hobby-wrapper .user-hobby-header {
+    padding: 15px 40px;
+    text-align: left; }
+  .user-hobby-container .user-hobby-wrapper .user-hobby-body {
+    display: flex; }
+    .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-left {
+      width: 30%;
+      border: solid 1px black; }
+      .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-left .user-add {
+        display: flex;
+        text-align: center; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-left .user-add input {
+          width: 70%;
+          height: 83%; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-left .user-add span {
+          width: 30%; }
+      .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-left .user-item-container {
+        overflow-y: auto;
+        height: 300px; }
+      .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-left .user-item {
+        cursor: pointer;
+        border-bottom: solid 1px black;
+        height: 35px;
+        align-items: center; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-left .user-item.selected {
+          background: #bbb; }
+    .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right {
+      width: 70%;
+      border: solid 1px black;
+      background-color: #eee; }
+      .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right > div {
+        background-color: white; }
+      .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-item-container {
+        overflow-y: auto;
+        height: 300px; }
+      .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-add {
+        display: flex; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-add .passion {
+          width: 35%;
+          height: 100%; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-add .hobby {
+          width: 20%;
+          height: 83%; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-add .year {
+          height: 83%;
+          width: 35%; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-add span {
+          height: 83%;
+          width: 10%;
+          cursor: pointer; }
+      .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-item {
+        border-bottom: solid 1px black;
+        display: flex;
+        height: 35px;
+        align-items: center; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-item .hobby-item-left {
+          width: 90%;
+          display: flex;
+          justify-content: space-between; }
+          .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-item .hobby-item-left span {
+            width: 33%;
+            text-align: center; }
+        .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-item .hobby-item-right {
+          width: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .user-hobby-container .user-hobby-wrapper .user-hobby-body .hobby-right .hobby-item .hobby-item-right svg {
+            cursor: pointer;
+            width: 25px;
+            height: 25px; }

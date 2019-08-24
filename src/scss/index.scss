@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+
+.user-hobby-container {
+  h2 {
+    color: red;
+  }
+  input {
+    text-align: center;
+  }
+  input::placeholder {
+    text-align: center;
+    color: #ddd;
+  }
+  .user-hobby-wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    border: solid 1px black;
+    font-size: 20px;
+
+    .user-hobby-header {
+      padding: 15px 40px;
+      text-align: left;
+    }
+    .user-hobby-body {
+      display: flex;
+
+      .hobby-left {
+        width: 30%;
+        border: solid 1px black;
+
+        .user-add {
+          display: flex;
+          text-align: center;
+          input {
+            width: 70%;
+            height: 83%;
+          }
+          span {
+            width: 30%;
+          }
+        }
+        .user-item-container {
+          overflow-y: auto;
+          height: 300px;
+        }
+        .user-item {
+          cursor: pointer;
+          border-bottom: solid 1px black;
+          height: 35px;
+          align-items: center;
+          &.selected {
+            background: #bbb;
+          }
+        }
+      }
+
+      .hobby-right {
+        width: 70%;
+        border: solid 1px black;
+        background-color: #eee;
+
+        & > div {
+          background-color: white;
+        }
+        .hobby-item-container {
+          overflow-y: auto;
+          height: 300px;
+        }
+        .hobby-add {
+          display: flex;
+
+          .passion {
+            width: 35%;
+            height: 100%;
+          }
+          .hobby {
+            width: 20%;
+            height: 83%;
+          }
+          .year {
+            height: 83%;
+            width: 35%;
+          }
+          span {
+            height: 83%;
+            width: 10%;
+            cursor: pointer;
+          }
+        }
+        .hobby-item {
+          border-bottom: solid 1px black;
+          display: flex;
+          height: 35px;
+          align-items: center;
+
+          .hobby-item-left {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            span {
+              width: 33%;
+              text-align: center;
+            }
+          }
+          .hobby-item-right {
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+              cursor: pointer;
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
